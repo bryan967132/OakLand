@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/FrontEnd/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.css">
+    <!-- <link rel="stylesheet" href="./styles/visual-studio.css"> -->
+    <link rel="stylesheet" href="./src/FrontEnd/styles/git-hub.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/clike/clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/edit/closebrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/focus/focus.min.js"></script>
+    <title>OakLand</title>
+</head>
+<body>
+    <div class="filas">
+        <!-- ACCIONES -->
+        <div class="botones">
+            <a class="boton" onclick="analyze()">Ejecutar</a>
+        </div>
+        <!-- AREA DE EJECUCION -->
+        <div class="columnas">
+            <!-- EDITOR DE CÓDIGO -->
+            <div class="panel1" id="codigo"></div>
+            <!-- CONSOLA -->
+            <div class="panel2" id="consola"></div>
+        </div>
+    </div>
+    <script src="./src/FrontEnd/js/visual-studio.js"></script>
+    <!-- Abstractos -->
+    <script src="./src/BackEnd/Classes/Abstracts/Expression.js"></script>
+    <script src="./src/BackEnd/Classes/Abstracts/Instruction.js"></script>
+    <!-- Utilidades -->
+    <script src="./src/BackEnd/Classes/Utils/Type.js"></script>
+    <script src="./src/BackEnd/Classes/Utils/Operations.js"></script>
+    <script src="./src/BackEnd/Classes/Utils/DataType.js"></script>
+    <script src="./src/BackEnd/Classes/Utils/TypeExp.js"></script>
+    <script src="./src/BackEnd/Classes/Utils/TypeInst.js"></script>
+    <script src="./src/BackEnd/Classes/Utils/Outs.js"></script>
+    <script src="./src/BackEnd/Classes/Utils/IDPos.js"></script>
+    <script src="./src/BackEnd/Classes/Utils/ReturnType.js"></script>
+    <!-- Entorno -->
+    <script src="./src/BackEnd/Classes/Env/Env.js"></script>
+    <!-- Expresiones -->
+    <script src="./src/BackEnd/Classes/Expressions/Primitive.js"></script>
+    <script src="./src/BackEnd/Classes/Expressions/Arithmetic.js"></script>
+    <script src="./src/BackEnd/Classes/Expressions/Relational.js"></script>
+    <script src="./src/BackEnd/Classes/Expressions/Logic.js"></script>
+    <script src="./src/BackEnd/Classes/Expressions/Ternary.js"></script>
+    <script src="./src/BackEnd/Classes/Expressions/AccessVar.js"></script>
+    <script src="./src/BackEnd/Classes/Expressions/Return.js"></script>
+    <!-- Instrucciones -->
+    <script src="./src/BackEnd/Classes/Instructions/Print.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/InitVar.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/Assign.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/AssignComp.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/IncDec.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/Block.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/If.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/Switch.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/Case.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/While.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/Continue.js"></script>
+    <script src="./src/BackEnd/Classes/Instructions/Break.js"></script>
+    <!-- Parser -->
+    <script src="./src/BackEnd/Language/Parser.js"></script>
+    <script src="./src/FrontEnd/js/index.js"></script>
+</body>
+</html>
