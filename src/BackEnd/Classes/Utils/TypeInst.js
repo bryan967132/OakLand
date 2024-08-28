@@ -1,0 +1,18 @@
+const TypeInst = {
+    PRINT:    "PRINT",
+    INITVAR:  "INITVAR",
+    ASSIGN:   "ASSIGN",
+    INITFUNC: "INITFUNC",
+    PLUSC:    "PLUSC",
+    MINUSC:   "MINUSC",
+    BLOCK:    "BLOCK",
+    IF:       "IF",
+    FOR:      "FOR",
+    WHILE:    "WHILE",
+    DOWHILE:  "DOWHILE",
+    SWITCH:   "SWITCH",
+    CASE:     "CASE",
+    BREAK:    "BREAK",
+    CONTINUE: "CONTINUE",
+    INCDEC:   "INCDEC",
+}

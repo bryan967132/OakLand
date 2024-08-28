@@ -1,0 +1,12 @@
+const TypeExp = {
+    PRIMITIVE:  "PRIMITIVE",
+    ARITHMETIC: "ARITHMETIC",
+    LOGIC:      "LOGIC",
+    RELATIONAL: "RELATIONAL",
+    ACCESSVAR:  "ACCESSVAR",
+    CALLFUNC:   "CALLFUNC",
+    RETURN:     "RETURN",
+    TERNARY:    "TERNARY",
+    CAST:       "CAST",
+    VECTOR:     "VECTOR",
+}
