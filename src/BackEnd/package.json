@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "g": "peggy Language/Parser.peggy -o Language/Parser.js --format globals --export-var PEGGY"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
